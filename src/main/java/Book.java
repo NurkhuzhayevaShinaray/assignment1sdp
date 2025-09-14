@@ -31,8 +31,9 @@ public class Book {
     public void setPublished_year(int published_year) {
         this.published_year = published_year;
     }
-    public class NovelBookBuilder implements IBookBuilder{
+    public static class NovelBookBuilder implements IBookBuilder{
         private Book book = new Book();
+
         @Override public void setTitle(String title){
         book.setTitle(title);}
         @Override public void setAuthor(String author){
