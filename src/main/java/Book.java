@@ -31,6 +31,10 @@ public class Book {
     public void setPublished_year(int published_year) {
         this.published_year = published_year;
     }
+    @Override
+    public String toString(){
+        return "Book: '" + title + "' by " + author + genre + "," + published_year;
+    }
     public static class NovelBookBuilder implements IBookBuilder{
         private Book book = new Book();
 
